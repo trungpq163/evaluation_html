@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Static HTML Site Boilerplate</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div
+        style="
+          margin-top: 10%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        "
+        id=""
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+          "
+          id="weekly-header"
+        ></div>
+        <button onclick="fnExcelReport();" style="margin: 10px 0px">
+          export excel
+        </button>
+        <table
+          class="table table-primary table-striped table-hover"
+          id="table-data"
+        >
+          <thead id="weekly-title-table">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Trainee account</th>
+              <th scope="col">Trainee name</th>
+              <th scope="col">Process compliance</th>
+              <th scope="col">Timeliness</th>
+              <th scope="col">Work quality</th>
+              <th scope="col">Professional skills</th>
+              <th scope="col">Team work</th>
+              <th scope="col">Attitude & Discipline</th>
+              <th scope="col">Academic Mark</th>
+              <th scope="col">Discipline point</th>
+              <th scope="col">Bonus</th>
+              <th scope="col">Penalty</th>
+              <th scope="col">Final grade</th>
+              <th scope="col">Comment</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody id="table-content"></tbody>
+        </table>
+        <div id="loading"></div>
+      </div>
+
+      <div id="">
+        <h3>Tong quat</h3>
+        <button>export excel</button>
+        <button>show</button>
+        <table
+          class="table table-primary table-striped table-hover"
+          id="table-data"
+        >
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Trainee account</th>
+              <th scope="col">Trainee name</th>
+              <th scope="col">Process compliance</th>
+              <th scope="col">Timeliness</th>
+              <th scope="col">Work quality</th>
+              <th scope="col">Professional skills</th>
+              <th scope="col">Team work</th>
+              <th scope="col">Attitude & Discipline</th>
+              <th scope="col">Academic Mark</th>
+              <th scope="col">Discipline point</th>
+              <th scope="col">Bonus</th>
+              <th scope="col">Penalty</th>
+              <th scope="col">Final grade</th>
+              <th scope="col">Comment</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody id="table-content-final"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
